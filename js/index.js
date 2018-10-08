@@ -7,7 +7,7 @@ document.querySelectorAll('.digits, .operators')
 document.querySelector('.equal')
         .addEventListener('click', () => (eval(display.value) === Infinity || eval(display.value) === -Infinity) ?
                                           display.value = 'It is impossible!' :
-                                          display.value = eval(display.value).toFixed(2));
+                                          display.value = eval(display.value));
         
 document.querySelector('.delete-last-number')
     .addEventListener('click', () => display.value = display.value.substring(0, result.length - 1)); 
