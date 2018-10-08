@@ -8,7 +8,7 @@ document.querySelectorAll('.digits, .operators')
 document.querySelector('.equal')
         .addEventListener('click', () => (eval(result) === Infinity || eval(result) === -Infinity) ?
                                           result = 'Dividing by zero is impossible!' :
-                                          result = eval(result);
+                                          result = eval(result));
         
 document.querySelector('.delete-last-number')
     .addEventListener('click', () => result = result.substring(0, result.length - 1)); 
