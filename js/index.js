@@ -6,7 +6,7 @@ document.querySelectorAll('.digits, .operators')
     
 document.querySelector('.equal')
         .addEventListener('click', () => (eval(display.value) === Infinity || eval(display.value) === -Infinity) ?
-                                          display.value = 'Divide by zero is impossible!' :
+                                          display.value = 'Dividing by zero is impossible!' :
                                           display.value = eval(display.value));
         
 document.querySelector('.delete-last-number')
