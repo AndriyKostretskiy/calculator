@@ -35,3 +35,6 @@ document.querySelector('.memory-save')
     
 document.querySelector('.memory-clear')
     .addEventListener('click', () => memory = '');
+    
+document.querySelector('.piConstant')
+    .addEventListener('click', () => memory = display.value += Math.PI.toFixed(2));    
